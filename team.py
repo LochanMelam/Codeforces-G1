@@ -1,7 +1,11 @@
 n = int(input())
 count = 0
-for i in range(n):
+def solve():
     x,y,z = list(map(int,input().split()))
     if x+y+z >=2:
-        count+=1
+        return 1
+    return 0
+    
+for i in range(n):
+    count+=solve()
 print(count)
