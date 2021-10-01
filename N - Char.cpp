@@ -1,7 +1,9 @@
 #include <iostream>
- 
+#define ll long long
+
 using namespace std;
-int main(){
+ll solve()
+{
     char c,x;
     cin >> c;
     if (int(c) > 64 & int(c) < 97){
@@ -12,5 +14,9 @@ int main(){
         x = int(c)-32;
         cout<<x;
     }
+ 
+}
+int main(){
+    solve();
     return 0;
 }
